@@ -49,9 +49,11 @@
 
 #define BOTAN_DISTRIBUTION_INFO "unspecified"
 
-#ifndef BOTAN_DLL
-#define BOTAN_DLL Q_DECL_IMPORT
-#endif
+//#ifndef BOTAN_DLL
+//#define BOTAN_DLL Q_DECL_IMPORT
+//#endif
+
+#define BOTAN_DLL
 
 /* Chunk sizes */
 #define BOTAN_DEFAULT_BUFFER_SIZE 4096

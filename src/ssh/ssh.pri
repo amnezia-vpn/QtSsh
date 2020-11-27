@@ -3,7 +3,7 @@ QT += gui network widgets
 INCLUDEPATH += $$PWD
 DEPENDPATH += $$PWD
 
-SOURCES = $$PWD/sshsendfacility.cpp \
+SOURCES += $$PWD/sshsendfacility.cpp \
     $$PWD/sshremoteprocess.cpp \
     $$PWD/sshpacketparser.cpp \
     $$PWD/sshpacket.cpp \
@@ -35,7 +35,7 @@ SOURCES = $$PWD/sshsendfacility.cpp \
     $$PWD/sshtcpiptunnel.cpp \
     $$PWD/sshforwardedtcpiptunnel.cpp
 
-HEADERS = $$PWD/sshsendfacility_p.h \
+HEADERS += $$PWD/sshsendfacility_p.h \
     $$PWD/sshremoteprocess.h \
     $$PWD/sshremoteprocess_p.h \
     $$PWD/sshpacketparser_p.h \
@@ -78,4 +78,4 @@ HEADERS = $$PWD/sshsendfacility_p.h \
     $$PWD/sshforwardedtcpiptunnel.h \
     $$PWD/sshforwardedtcpiptunnel_p.h
 
-FORMS = $$PWD/sshkeycreationdialog.ui
+FORMS += $$PWD/sshkeycreationdialog.ui

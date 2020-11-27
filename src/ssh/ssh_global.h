@@ -27,11 +27,13 @@
 
 #include <QtGlobal>
 
-#if defined(QTCSSH_LIBRARY)
-#  define QSSH_EXPORT Q_DECL_EXPORT
-#else
-#  define QSSH_EXPORT Q_DECL_IMPORT
-#endif
+//#if defined(QTCSSH_LIBRARY)
+//#  define QSSH_EXPORT Q_DECL_EXPORT
+//#else
+//#  define QSSH_EXPORT Q_DECL_IMPORT
+//#endif
+
+#define QSSH_EXPORT
 
 #define QSSH_PRINT_WARNING qWarning("Soft assert at %s:%d", __FILE__, __LINE__)
 #define QSSH_ASSERT(cond) do { if (!(cond)) { QSSH_PRINT_WARNING; } } while (false)
